@@ -1,7 +1,7 @@
 const db = require("../db/db");
 
 class StudentDAO{
-  creatStudent = async params => {
+  createStudent = async params => {
     let id = await db('students')
       .insert(params)
       .returning('id');
