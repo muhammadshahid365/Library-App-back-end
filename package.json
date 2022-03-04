@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/muhammadshahid365/Library-App-back-end#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "knex": "^1.0.3",
     "nodemon": "^2.0.15",
