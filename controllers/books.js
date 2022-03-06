@@ -32,7 +32,7 @@ class BooksController {
 
   updateBook = async (req, res) => {
     try {
-      await bookService.updateBook(req.query.id);
+      await bookService.updateBook(req.query.id, req.body);
       res.json('updated')
     } catch (error) {
       res.json(error.message);

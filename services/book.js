@@ -5,7 +5,7 @@ class BookService{
   createBook = async params => await bookDAO.createBook(params);
   getAllBooks = async () => await bookDAO.getAllBooks();
   getBook = async id => await bookDAO.getBook(id);
-  updateBook = async (data) => bookDAO.updateBook(data.id, data.params);
+  updateBook = async (id, params) => bookDAO.updateBook(id, params);
 }
 
 module.exports = new BookService();
