@@ -1,7 +1,6 @@
-const book = require('../daos/book');
-const bookDAO = require('../daos/book')
+const bookDAO = require('../daos/book');
 
-class BookService{
+class BookService {
   createBook = async params => await bookDAO.createBook(params);
   getAllBooks = async () => await bookDAO.getAllBooks();
   getBook = async id => await bookDAO.getBook(id);

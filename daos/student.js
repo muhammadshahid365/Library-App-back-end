@@ -10,6 +10,9 @@ class StudentDAO{
   }
 
   getAllStudents = async () => await db('students').select('*');
+  
+  getStudent = async id => await db('students').where({id}).select('*')
+  
   updateStudent = async (id, params) => {
     await db('students')
       .where({id})

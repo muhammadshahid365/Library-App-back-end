@@ -3,7 +3,6 @@ const bookService = require('../services/book')
 class BooksController {
   createBook = async (req, res) => {
     try {
-      console.log(req.body);
       let id = await bookService.createBook(req.body)
       res.json(id)
     } catch (error) {
